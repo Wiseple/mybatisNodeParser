@@ -53,12 +53,6 @@ public interface XMLParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitChardata(XMLParser.ChardataContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link XMLParser#parameter}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitParameter(XMLParser.ParameterContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link XMLParser#misc}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

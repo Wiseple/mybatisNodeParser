@@ -78,16 +78,6 @@ public interface XMLParserListener extends ParseTreeListener {
 	 */
 	void exitChardata(XMLParser.ChardataContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link XMLParser#parameter}.
-	 * @param ctx the parse tree
-	 */
-	void enterParameter(XMLParser.ParameterContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link XMLParser#parameter}.
-	 * @param ctx the parse tree
-	 */
-	void exitParameter(XMLParser.ParameterContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link XMLParser#misc}.
 	 * @param ctx the parse tree
 	 */

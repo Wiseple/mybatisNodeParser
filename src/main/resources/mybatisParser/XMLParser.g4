@@ -46,7 +46,7 @@ prolog
     ;
 
 content
-    : chardata? ((element | reference | CDATA | PI | COMMENT | parameter) chardata?)*
+    : chardata? ((element | reference | CDATA | PI | COMMENT ) chardata?)*
     ;
 
 element
@@ -70,9 +70,7 @@ chardata
     : TEXT
     | SEA_WS
     ;
-parameter
-    :PARAMETER
-    ;
+
 misc
     : COMMENT
     | PI

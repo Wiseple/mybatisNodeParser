@@ -43,7 +43,6 @@ CDATA   : '<![CDATA[' .*? ']]>';
 DTD       : '<!' .*? '>' -> skip;
 EntityRef : '&' Name ';';
 CharRef   : '&#' DIGIT+ ';' | '&#x' HEXDIGIT+ ';';
-PARAMETER: '${' Name '}';
 SEA_WS    : (' ' | '\t' | '\r'? '\n')+;
 
 OPEN         : '<'       -> pushMode(INSIDE);
